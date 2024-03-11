@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+        <div class="d-flex flex-row align-items-center">
+          <img src="Putih-Caretakers.png" id="logonav">
+          <h4>CARETAKERS</h4>
+        </div>
+        <div class="hamburger-container">
+          <div class="hamburger-menu" onclick="toggleSidebar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+      </header>
+        </div>
+        <div class="sidebar" id="sidebar">
+          <div class="d-flex flex-row align-items-center">
+            <img src="Biru-Caretakers.png" id="logoside" />
+            <h2>MENU</h2>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="form.html">FORM PENGADUAN</a></li>
+              <li><a href="lokasi.html">LOKASI RAWAN</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row mt-5">
+            <div class="col col-md-6 col-sm-12 d-flex flex-column gap-2">
+                <h1 class="text-center" id="title-lokasi">PETA LOKASI RAWAN</h1>
+                <h3 class="text-center d-none d-md-block">KASUS ODGJ DAN TUNAWISMA KALIMANTAN SELATAN</h3>
+            </div>
+            <div class="col col-md-6 col-sm-12 d-flex flex-column gap-2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.2110296886735!2d114.58295457363946!3d-3.297863896677019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de4230963790c57%3A0x902859712cc02755!2sLambung%20Mangkurat%20University%20-%20Campus%20I%20Banjarmasin!5e0!3m2!1sen!2sid!4v1710169541457!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
+      <script src="script.js"></script>
+  </body>
+</html>

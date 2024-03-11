@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hamburger-container">
+      <div class="hamburger-menu" onclick="toggleSidebar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+      <div class="d-flex flex-row align-items-center">
+        <img src="Biru-Caretakers.png" id="logoside" />
+        <h2>MENU</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="form.html">FORM PENGADUAN</a></li>
+          <li><a href="lokasi.html">LOKASI RAWAN</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="header">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column gap-1 py-5"
+      >
+        <div id="logo" class="d-flex flex-row align-items-center gap-0">
+          <img src="Putih-Caretakers.png" id="caretakers" alt="" />
+          <div class="d-flex flex-column">
+            <h1 id="title" class="d-none d-md-block">CARETAKERS</h1>
+            <h3 id="slogan" class="d-none d-md-block">BERANI LINDUNGI ODGJ DAN TUNAWISMA</h3>
+          </div>
+        </div>
+        <button
+          class="d-flex justify-content-center align-items-center"
+          id="button"
+        >
+          <a href="form.html">AJUKAN</a>
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

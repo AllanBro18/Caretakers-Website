@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <header>
+    <div class="d-flex flex-row align-items-center">
+      <img src="Putih-Caretakers.png" id="logonav">
+      <h4>CARETAKERS</h4>
+    </div>
+    <div class="hamburger-container">
+      <div class="hamburger-menu" onclick="toggleSidebar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+  </header>
+    </div>
+    <div class="sidebar" id="sidebar">
+      <div class="d-flex flex-row align-items-center">
+        <img src="Biru-Caretakers.png" id="logoside" />
+        <h2>MENU</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="form.html">FORM PENGADUAN</a></li>
+          <li><a href="lokasi.html">LOKASI RAWAN</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center my-5"
+      >
+        <h1 id="form-title">FORM PENGADUAN</h1>
+        <p id="peringatan">Harap isi data berikut dengan sebenar-benarnya</p>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <form action="GET">
+          <div class="row">
+            <div class="col col-md-6 col-sm-12 d-flex flex-column gap-2">
+              <label for="nama">NAMA PELAPOR</label>
+              <input type="text" name="nama" id="nama-pelapor" />
+              <label for="hp">NO. HP PELAPOR</label>
+              <input type="number" name="hp" id="hp-pelapor" />
+              <label for="korban">NAMA ORANG YANG TERDAMPAK</label>
+              <input type="text" name="korban" id="korban" />
+              <label for="lokasi">LOKASI KEBERADAAN</label>
+              <input type="text" name="lokasi" id="lokasi" />
+            </div>
+            <div class="col col-md-6 col-sm-12 d-flex flex-column gap-2">
+              <label for="kategori">KATEGORI MASALAH</label>
+              <select name="masalah" id="">
+                <option value="pilih" selected>Pilih salah satu</option>
+                <option value="odgj">Orang dalam gangguan jiwa (ODGJ)</option>
+                <option value="tunawisma">Tunawisma</option>
+              </select>
+              <label for="deskripsi">DESKRIPSI MASALAH</label>
+              <textarea name="deskripsi" id="" cols="30" rows="4"></textarea>
+              <label for="dokumen">FOTO/DOKUMEN PENDUKUNG</label>
+              <input type="file" name="dokumen" id="" />
+            </div>
+          </div>
+          <button type="submit" id="kirim">KIRIM</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
